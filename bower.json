@@ -1,0 +1,17 @@
+{
+  "name": "mobify-scaffold",
+  "version": "0.0.1",
+  "main": "src/main.scss",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-scss": "~3.0.1"
+  }
+}

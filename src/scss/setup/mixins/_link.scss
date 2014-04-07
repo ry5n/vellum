@@ -1,0 +1,32 @@
+// Standard link, no state
+
+@mixin link {
+  color: $link-color;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+// Link hover state
+
+@mixin link-hover {
+  color: $link-light;
+}
+
+// Link active state
+
+@mixin link-active {
+  outline: 0;
+}
+
+// Link including focus, hover and active state
+
+@mixin link-with-state {
+  @include link;
+  &:focus,
+  &:hover {
+    @include link-hover;
+  }
+  &:active {
+    @include link-active;
+  }
+}

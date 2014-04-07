@@ -1,0 +1,14 @@
+
+// Return a multiple of the vertical spacing value in px. Provides a more
+// concise, readable way to write $v-space * n;
+
+@function v-space($multiplier: 1) {
+  @return $v-space * $multiplier;
+}
+
+// Return a multiple of the horizontal spacing value in px. Provides a more
+// concise, readable way to write $h-space * n;
+
+@function h-space($multiplier: 1) {
+  @return $h-space * $multiplier;
+}

@@ -1,0 +1,67 @@
+
+// ------------------------------------
+// Color
+// ------------------------------------
+//
+// Conventions:
+// - ${name}-color is the base color.
+// - variations in lightness: ${name}-light, ${name}-dark
+// - variations in saturation: ${name}-vivid, ${name}-muted
+// - extra variations: ${name}-xlight, ${name}-xxdark
+
+$grey-dark:     hsl(0, 0%, 20%);
+$grey-mid:      hsl(0, 0%, 45%);
+$grey-light:    hsl(0, 0%, 80%);
+$grey-xlight:   hsl(0, 0%, 90%);
+// consider: $brand-color, $accent-color, etc.
+
+$text-color:    $grey-dark;
+$border-color:  $grey-light;
+$link-color:    blue;
+$link-light:    lighten(blue, 8%);
+
+$success-color: green;
+$warning-color: yellow;
+$error-color:   red;
+
+
+// ------------------------------------
+// Type
+// ------------------------------------
+
+$browser-default-font-size: 16px; // !constant
+
+$base-font-size: 14px;
+$base-leading-ratio: 1.5;
+$base-line-height: floor($base-font-size * $base-leading-ratio);
+
+$size-a: 28px;
+$size-b: 21px;
+$size-c: 18px;
+$size-d: 16px;
+$size-base: $base-font-size;
+$size-small: 12px;
+// consider: $size-e, $size-mini, etc.
+
+$text-face: "Helvetica Neue", Helvetica, Arial, sans-serif;
+// consider: $heading-face, $display-face, $caption-face, etc.
+
+
+// ------------------------------------
+// Layout
+// ------------------------------------
+
+$v-space: $base-line-height;
+$h-space: $base-line-height;
+
+// ------------------------------------
+// Z-index
+// ------------------------------------
+//
+// Works like a list of layers to keep z-ordering sane. These can be incremented
+// slightly as necessary, eg. $layer-stage + 1;
+
+$layer-overlay:   1000; // in front of everything else
+$layer-frontrow:  100;  // in front of most things
+$layer-stage:     10;   // 99% of content placed in front of the backdrop
+$layer-backdrop:  1;    // behind other positioned elements
