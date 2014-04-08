@@ -1,0 +1,16 @@
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+// 1. Apply base font-size as a percentage of the browser’s default.
+// N.B. -webkit-text-size-adjust is taken care of by normalize.
+
+html {
+    font-family: $text-face;
+    font-size: $base-font-size / $browser-default-font-size * 100%; // 1
+    line-height: $base-leading-ratio;
+    color: $text-color;
+}

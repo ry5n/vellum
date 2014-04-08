@@ -2,12 +2,14 @@
 // ------------------------------------
 // Setup
 // ------------------------------------
-//
-// Import project variables and external Sass libraries as well as
-// project-specific mixins and functions. Setup should never output CSS.
 
+// Project variables.
 @import 'setup/variables';
+
+// Sass libraries.
 @import 'setup/libraries';
+
+// Project-specific functions and mixins.
 @import 'setup/functions/*';
 @import 'setup/mixins/*';
 
@@ -15,38 +17,20 @@
 // ------------------------------------
 // Base
 // ------------------------------------
-//
-// Default styling for native HTML elements.
 
-// Normalize
+// Library base styles
 @import '../bower_components/normalize-scss/normalize';
 
 // Project base styles
-@import 'base/*';
-
-
-// ------------------------------------
-// Utilities
-// ------------------------------------
-//
-// Low-level utility styles, designed to be applied to individual elements and
-// work together with components.
-
-// Library utils
-// @import '../bower_components/brick/util';
-
-// Project utils
-@import 'utils/*';
+@import 'base/defaults';
 
 
 // ------------------------------------
 // Components
 // ------------------------------------
-//
-// Discrete style modules, factored based on the design system.
 
 // Library components
-// @import '../bower_components/brick/component';
+// @import '../bower_components/stencil/example-component';
 
 // Project components
 @import 'components/*';

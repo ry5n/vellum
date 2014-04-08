@@ -1,6 +1,6 @@
 
 // ------------------------------------
-// Color
+// Colors and gradients
 // ------------------------------------
 //
 // Conventions:
@@ -24,6 +24,12 @@ $success-color: green;
 $warning-color: yellow;
 $error-color:   red;
 
+$gradient: linear-gradient($grey-xlight, $grey-light);
+$gradient-light: linear-gradient(#fff, $grey-xlight);
+
+$gradient-reverse: linear-gradient($grey-light, $grey-xlight);
+$gradient-light-reverse: linear-gradient($grey-xlight, #fff);
+
 
 // ------------------------------------
 // Type
@@ -32,7 +38,7 @@ $error-color:   red;
 $browser-default-font-size: 16px; // !constant
 
 $base-font-size: 14px;
-$base-leading-ratio: 1.5;
+$base-leading-ratio: 1.4;
 $base-line-height: floor($base-font-size * $base-leading-ratio);
 
 $size-a: 28px;
@@ -53,6 +59,20 @@ $text-face: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 $v-space: $base-line-height;
 $h-space: $base-line-height;
+
+
+// ------------------------------------
+// Dimension
+// ------------------------------------
+
+$input-height: 40px;
+
+
+// ------------------------------------
+// Appearance
+// ------------------------------------
+
+$border-radius: 3px;
 
 // ------------------------------------
 // Z-index

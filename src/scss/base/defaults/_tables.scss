@@ -1,0 +1,22 @@
+
+table {
+    width: 100%;
+    margin: v-space() 0;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: v-space(0.5) 0;
+    vertical-align: middle;
+}
+
+thead th {
+    border-bottom: 1px solid $border-color;
+    font-weight: bold;
+    text-align: left;
+}
+
+[scope="row"] {
+    text-align: right;
+}
