@@ -1,0 +1,65 @@
+
+// # Thinking about variables
+//
+// We want a scale that is:
+// - understandable: it should be as clear as possible what each point on the
+//   scale will yield;
+// - flexible: names should have some “play” and aren’t pinned to absolute values;
+// - extensible: additional values can be inserted into the scale as needed.
+//
+//
+// ## Example: Color
+//
+// ### a11y notes:
+// - for small text, 46% is minimum for WCAG AA (small text)
+// - for large text, 58% is minimum for WCAG AA (large text)
+
+// #### Based on graphite scale:
+//
+// This is rather silly and is confusing.
+
+$grey-8b:   hsl(0, 0%, 10%);
+$grey-6b:   hsl(0, 0%, 20%);
+$grey-4b:   hsl(0, 0%, 30%);
+$grey-2b:   hsl(0, 0%, 40%);
+$grey-hb:   hsl(0, 0%, 50%);
+$grey-2h:   hsl(0, 0%, 60%);
+$grey-4h:   hsl(0, 0%, 70%);
+$grey-6h:   hsl(0, 0%, 80%);
+$grey-8h:   hsl(0, 0%, 90%);
+
+// #### Doubled approximate scale
+//
+// This is even more confusing.
+
+$grey-4:  hsl(0, 0%, 18%);
+$grey-6:  hsl(0, 0%, 30%);
+$grey-9:  hsl(0, 0%, 45%);
+$grey-16: hsl(0, 0%, 80%);
+$grey-19: hsl(0, 0%, 95%);
+
+// ### Simple scale (averaged to closest 10%)…
+//
+// This probably makes the most sense. The key is that the numbers provide an
+// *approximate* indication of actual Lightness value, but there’s wiggle room
+// for both picking the exact right value and for adjustment later.
+
+$grey-1:  hsl(0, 0%, 13%);
+$grey-2:  hsl(0, 0%, 22%);
+$grey-5:  hsl(0, 0%, 46%);
+$grey-8:  hsl(0, 0%, 76%);
+$grey-9:  hsl(0, 0%, 85%);
+$grey-10: hsl(0, 0%, 95%);
+
+// Since we’re using a numbered scale, we can also do something like this:
+
+// ### Accidentals
+//
+// After establishing variables on a predefined scale, additional values
+// can be inserted between using a two-character suffix. (The term “accidental”
+// comes from music: sharps and flats being the most well-known.)
+// e.g. $grey-9-lt, $grey-9-dk
+
+$grey-1-dk: hsl(0, 0%, 8%);
+$grey-5-lt: hsl(0, 0%, 50%);
+$grey-9-dk: hsl(0, 0%, 92%);

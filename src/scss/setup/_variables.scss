@@ -4,25 +4,33 @@
 // ------------------------------------
 //
 // Conventions:
-// - ${name}-color is the base color.
-// - variations in lightness: ${name}-light, ${name}-dark
-// - variations in saturation: ${name}-vivid, ${name}-muted
-// - extra variations: ${name}-xlight, ${name}-xxdark
+// - ${name}-color is the base color;
+// - variations in lightness: suffix -light, -mid, -dark
+// - variations in saturation: suffix -vivid, -muted
+//
+// Example: This is too many for the actual defaults, but provides a better
+// picture of the convention.
+//
+// @todo It would be nice to have a convention that gave us the ability to add
+// the occasional color to the existing scale, between adjacent values. For
+// thoughts on this, see ./variables.md.scss
 
-$grey-dark:     hsl(0, 0%, 20%);
-$grey-mid:      hsl(0, 0%, 45%);
-$grey-light:    hsl(0, 0%, 80%);
-$grey-xlight:   hsl(0, 0%, 90%);
-// consider: $brand-color, $accent-color, etc.
+$grey-x-dark:    hsl(0, 0%, 16%);
+$grey-dark:      hsl(0, 0%, 25%);
+$grey-mid-dark:  hsl(0, 0%, 33%);
+$grey-mid:       hsl(0, 0%, 46%); // minimum contrast for small text
+$grey-mid-light: hsl(0, 0%, 58%); // minimum contrast for large text
+$grey-light:     hsl(0, 0%, 85%);
+$grey-x-light:   hsl(0, 0%, 92%);
 
 $text-color:    $grey-dark;
 $border-color:  $grey-light;
 $link-color:    blue;
 $link-light:    lighten(blue, 8%);
-
 $success-color: green;
 $warning-color: yellow;
 $error-color:   red;
+// consider: $brand-color, $accent-color, etc.
 
 $gradient: linear-gradient($grey-xlight, $grey-light);
 $gradient-light: linear-gradient(#fff, $grey-xlight);
